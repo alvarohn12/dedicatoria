@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,700;1,400&family=Sixtyfour&display=swap');
+body{
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+}
+h1{
+    font-family: "Sixtyfour", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    text-transform: capitalize;
+}
+span{
+    color: rgb(240, 128, 234);
+}
+.descripcion{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 18px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(136, 7, 125);
+    margin: auto;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+@keyframes girar{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+
+section:hover{
+    background-image: url(img/nos.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: girar ease-in-out 5s;
+}
+.a{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+.a:hover{
+    color: transparent;
+}
+.d{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family:"Dancing Script", cursive;
+}
